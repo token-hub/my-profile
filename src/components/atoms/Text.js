@@ -1,7 +1,7 @@
 import React from 'react'
 import Typography from '@mui/material/Typography';
 
-const Text = ({ children, variant = 'h5', textAlign = 'left', pr = 5 }) => {
+const Text = ({ children, variant = 'h5', textAlign = 'left', pr = 0 }) => {
 
     return (
         <>

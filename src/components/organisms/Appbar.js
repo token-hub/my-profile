@@ -19,9 +19,9 @@ const Appbar = () => {
       <AppBar position="sticky" sx={{ px: {xs: 0, md: 10, xl: 20} }}>
         <Toolbar sx={{display:'flex', justifyContent: 'flex-end'}} >
           <Box sx={{display: { xs: 'none', md: 'flex' }}}>
-              <Text> HOME </Text>
-              <Text> ABOUT </Text>
-              <Text> PROJECTS </Text>
+              <Text pr={5}> HOME </Text>
+              <Text pr={5}> ABOUT </Text>
+              <Text > PROJECTS </Text>
           </Box>
 
           <IconButton
