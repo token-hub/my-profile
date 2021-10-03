@@ -8,7 +8,9 @@ import Appbar from '../components/organisms/Appbar';
 const Home = () => {
     return (
         
-        <Appbar/>
+       <div>
+           asdas
+       </div>  
         // <Box sx={{ display: "flex"}}>
         //     <Box sx={{flexGrow: 1}}>
         //         <Avatar
