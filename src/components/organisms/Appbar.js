@@ -7,15 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from './Drawer';
 
-export default function ButtonAppBar(props) {
-  const spacing = {
-    px : {
-      xs: 0,
-      md: 10, 
-      xl: 20, 
-    }
-  }
-
+const Appbar = () => {
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = () => {
@@ -24,7 +16,7 @@ export default function ButtonAppBar(props) {
 
   return (
     <>
-      <AppBar position="sticky" sx={spacing}>
+      <AppBar position="sticky" sx={{ px: {xs: 0, md: 10, xl: 20} }}>
         <Toolbar sx={{display:'flex', justifyContent: 'flex-end'}} >
           <Box sx={{display: { xs: 'none', md: 'flex' }}}>
               <Text> HOME </Text>
@@ -48,3 +40,5 @@ export default function ButtonAppBar(props) {
     </>
   );
 }
+
+export default Appbar;
