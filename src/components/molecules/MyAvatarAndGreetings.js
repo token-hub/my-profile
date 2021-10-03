@@ -5,7 +5,7 @@ import Greetings from '../atoms/Greetings';
 
 const MyAvatarAndGreetings = () => {
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh', flexDirection: 'column'}}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 570, flexDirection: 'column'}}>
             <MyAvatar />
             <Greetings />
         </Box>
