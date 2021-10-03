@@ -1,12 +1,14 @@
 import React from 'react'
-import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 const Text = ({ children }) => {
 
     return (
-        <Box>
-            <Box sx={{ fontSize: 20, pr: 5, py: 2 }}>{ children }</Box>
-        </Box>
+        <>
+            <Typography variant='h5' sx={{ pr: 5, py: 2 }} >
+             { children }
+            </Typography>
+        </>
     )
 }
 
