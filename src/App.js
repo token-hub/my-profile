@@ -1,9 +1,16 @@
-function App() {
+import React from 'react'
+import Home from './pages/Home';
+import Box from '@mui/system/Box';
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  );
+    <Box sx={{height: '100vh', fontFamily: 'Nunito Sans' }}>
+      <Home />
+
+     <Box sx={{fontSize:100}}> Hello</Box>
+     <Box sx={{ height: 1000, bgcolor: 'red' }}>2</Box>
+    </Box>
+  )
 }
 
-export default App;
+export default App
