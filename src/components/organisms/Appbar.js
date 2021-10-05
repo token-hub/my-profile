@@ -6,6 +6,7 @@ import Text from '../atoms/Text';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from './Drawer';
+import AppbarLink from '../atoms/AppbarLink';
 
 const Appbar = () => {
   const [open, setOpen] = useState(false);
@@ -16,14 +17,14 @@ const Appbar = () => {
 
   return (
     <>
-      <AppBar position="sticky" sx={{ px: { md: '8%' ,lg: '14%' }  }}>
+      <AppBar position="sticky" sx={{ px: { md: '7%' ,lg: '13%' }  }}>
         <Toolbar sx={{display:'flex', justifyContent: 'flex-end'}} >
           <Box sx={{display: { xs: 'none', md: 'flex' }}}>
-              <Text pr={5}> HOME </Text>
-              <Text pr={5}> ABOUT </Text>
-              <Text > PROJECTS </Text>
+              <AppbarLink href='/'>HOME</AppbarLink>
+              <AppbarLink href="about">ABOUT</AppbarLink>
+              <AppbarLink href="projects">PROJECTS</AppbarLink>
           </Box>
-
+       
           <IconButton
             size="large"
             edge="start"

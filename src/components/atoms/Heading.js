@@ -1,9 +1,10 @@
 import React from 'react'
 import Typography from '@mui/material/Typography';
 
-const Heading = ({ children }) => {
+const Heading = ({ children, ...props }) => {
     return (
         <Typography 
+            {...props}
             variant='h4' 
             sx={{ 
                 fontWeight: 'bold',

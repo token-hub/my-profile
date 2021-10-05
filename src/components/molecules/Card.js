@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import MyLink from '../atoms/MyLink';
+import ProjectLink from '../atoms/ProjectLink';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -34,7 +34,7 @@ const MyCard = ({ img, title, href='#', children }) => {
             </CardActionArea>
         </Card>
 
-        <MyLink href={href} variant='h3'>{title}</MyLink>
+        <ProjectLink href={href} variant='h3'>{title}</ProjectLink>
         <Typography variant='h5' sx={{ mt: 2 }} >{children}</Typography>
     </Box>
   );

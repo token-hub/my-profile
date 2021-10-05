@@ -9,9 +9,9 @@ const Home = () => {
     return (
        <Base>
             <MyAvatarAndGreetings />
-            <HorizontalLine />
+            <HorizontalLine id='about' />
             <About />
-            <HorizontalLine />
+            <HorizontalLine id='projects' />
             <Projects />
             <HorizontalLine />
        </Base>
