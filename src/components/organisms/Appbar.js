@@ -16,7 +16,7 @@ const Appbar = () => {
 
   return (
     <>
-      <AppBar position="sticky" sx={{ px: {xs: 0, md: 10, xl: 20} }}>
+      <AppBar position="sticky" sx={{ px: { md: '8%' ,lg: '14%' }  }}>
         <Toolbar sx={{display:'flex', justifyContent: 'flex-end'}} >
           <Box sx={{display: { xs: 'none', md: 'flex' }}}>
               <Text pr={5}> HOME </Text>
