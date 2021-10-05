@@ -5,7 +5,6 @@ const theme = createTheme({
     fontFamily: 
       [
         'Nunito Sans',
-        'Roboto',
       ].join(','),
   },
   palette: {

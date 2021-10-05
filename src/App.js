@@ -1,19 +1,20 @@
 import React from 'react'
 import Home from './pages/Home';
-import Box from '@mui/system/Box';
-import Appbar from './components/organisms/Appbar';
-import Base from './components/templates/Base';
-import Contact from './components/organisms/Contact';
+
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
 
 const App = () => {
   return (
-    <Box sx={{height: 'auto', fontFamily: 'Nunito Sans', position: 'relative'}}>
-      <Appbar/>
-      <Base>
-        <Home />
-      </Base>
-      <Contact />
-    </Box>
+    <>
+      <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/project:project" exact component={Home} />
+          <Route exact component={Home} />
+      </Switch>
+    </>
   )
 }
 
