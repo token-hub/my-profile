@@ -1,19 +1,18 @@
 import React from 'react'
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 
-const MyButton = ({ text }) => {
+const MyButton = ({ children }) => {
     return (
-       <>
+       <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
             <Button 
                 variant='contained'
                 size='large' 
-                sx={{ borderRadius: '50px', fontWeight: 'heavy', fontSize: 20, py: 1.5, px: 4, 
-                    ':hover': { border: 2, borderColor: 'primary.main', bgcolor: 'white', color: 'primary.main' }
-                }}
+                sx={{ borderRadius: '50px', fontWeight: 'heavy', fontSize: 20, py: 1.5, px: 4, mt: 4 }}
             >
-                {text}
+                {children}
             </Button>
-       </>
+       </Box>
     )
 }
 
